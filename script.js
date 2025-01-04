@@ -25,7 +25,7 @@ function escolherData(data) {
     document.getElementById("resposta").innerHTML = `Podemos sair sim ${data.toLowerCase()}!`;
     
     // Exibe o link do WhatsApp com a mensagem
-    const numeroWhatsApp = "1234567890";  // Substitua pelo seu número
+    const numeroWhatsApp = "5541999077431";  // Substitua pelo seu número
     const mensagem = encodeURIComponent(`Oi! Eu adoraria sair ${data.toLowerCase()}!`);
     
     // Link do WhatsApp
