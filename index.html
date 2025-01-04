@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendador de Date</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Date? ❤️ HAHAHAHA</h1>
+        <p id="perguntaInicial">Gostaria de sair comigo?</p>
+        <div class="buttons">
+            <button class="btn yes" onclick="respostaSim()">Sim</button>
+            <button class="btn no" onclick="respostaNao()">Não</button>
+        </div>
+        
+        <!-- Pergunta sobre Hoje ou Amanhã -->
+        <div id="opcaoContainer" style="display: none;">
+            <p>Hoje ou Amanhã?</p>
+            <div class="buttons">
+                <button class="btn" onclick="escolherData('Hoje')">Hoje</button>
+                <button class="btn" onclick="escolherData('Amanhã')">Amanhã</button>
+            </div>
+        </div>
+
+        <div id="resposta"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

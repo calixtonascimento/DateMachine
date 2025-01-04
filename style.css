@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; /* Torna o botão 100% da largura disponível */
+}
+
+.yes {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.no {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+#resposta {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#opcaoContainer .btn {
+    background-color: #3498db; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    padding: 15px 30px; /* Padding confortável */
+    font-size: 1.2rem; /* Tamanho maior da fonte */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor como pointer */
+    transition: all 0.3s ease; /* Efeito suave na transição */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    width: 100%; /* Torna o botão 100% da largura em telas pequenas */
+    margin: 10px 0; /* Espaçamento entre os botões */
+}
+
+/* Efeito de hover para destacar o botão ao passar o mouse */
+#opcaoContainer .btn:hover {
+    background-color: #2980b9; /* Cor de fundo mais escura */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+    transform: translateY(-3px); /* Levanta o botão para dar sensação de clique */
+}
+
+/* Efeito de foco para melhorar acessibilidade */
+#opcaoContainer .btn:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.5); /* Adiciona destaque ao focar */
+}
+
+/* Responsividade: Ajusta o tamanho para telas menores */
+@media (min-width: 600px) {
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .btn {
+        width: auto; /* No desktop, os botões têm tamanho fixo */
+    }
+
+    h1 {
+        font-size: 2rem; /* Aumenta o tamanho do título em telas maiores */
+    }
+
+    p {
+        font-size: 1.2rem; /* Aumenta o tamanho do texto em telas maiores */
+    }
+}
